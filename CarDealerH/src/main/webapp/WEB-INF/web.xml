@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+  <servlet>
+  	<servlet-name>FrontServlet</servlet-name>
+  	<display-name>FrontServlet</display-name>
+  	<description></description>
+  	<servlet-class>CarDealerH.FrontServlet</servlet-class>
+  </servlet>
+    <servlet-mapping>
+        <servlet-name>User</servlet-name>
+        <url-pattern>/register</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Success</servlet-name>
+        <url-pattern>/Success</url-pattern>
+    </servlet-mapping>
+    <welcome-file-list>
+        <welcome-file>Login.jsp</welcome-file>
+    </welcome-file-list>
+</web-app>
+
+
+<!-- <!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+  <servlet>
+  	<servlet-name>FrontServlet</servlet-name>
+  	<display-name>FrontServlet</display-name>
+  	<description></description>
+  	<servlet-class>CarDealerH.FrontServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>FrontServlet</servlet-name>
+  	<url-pattern>/FrontServlet</url-pattern>
+  </servlet-mapping>
+</web-app>
+ -->

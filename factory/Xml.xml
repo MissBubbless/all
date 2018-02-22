@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+<!-- <bean/> definitions here -->
+<bean id="saraleeWheat" class="com.aa.BreadImpl">
+	<property name="manufacturer" value="SaraLee"/>
+	<property name="ingredients" value="wheat"/>
+	<property name="calories" value="200"/>
+	<property name="price" value="2.50"/>
+	<property name="shape" value="rectangle"/>
+	<property name="expDate" value="2017-11-24"/>
+</bean>
+
+<bean id="theaterAddress" class="com.aa.Address">
+	<property name="city" value="irving"/>
+	<property name="zipcode" value="75028"/>
+</bean>
+
+<bean id="amctheater" class="com.aa.Theater">
+	<property name="name" value="AMC"/>
+	<property name="address" ref="theaterAddress"/>
+</bean>
+
+<!-- 
+<bean id="saraleeWhite" class="com.aa.BreadImpl" scope=>
+	<property name="manufacturer" value="SaraLee"/>
+	<property name="ingredients" value="white"/>
+	<property name="calories" value="300"/>
+	<property name="price" value="1.50"/>
+	<property name="shape" value="circle"/>
+	<property name="expDate" value="2017-11-14"/>
+</bean> -->
+
+<bean id="kissanjam" class="com.aa.SpreadImpl">
+	<property name="manufacturer" value="Priya"/>
+	<property name="ingredients" value="mango,pineapple"/>
+	<property name="calories" value="500"/>
+	<property name="price" value="10.50"/>
+	<property name="scoops" value="2"/>
+	<property name="expDate" value="2018-06-24"/>
+</bean>
+
+<bean id="american" class="com.aa.CheeseImpl" scope="singleton">
+	<property name="age" value="2"/>
+	<property name="calories" value="50"/>
+	<property name="slices" value="2"/>
+	<property name="price" value="5.50"/>
+	<property name="expDate" value="2018-11-24"/>
+</bean>
+
+<bean id="Dog" class="com.nym.Dog" scope="singleton">
+	<property name="small" value="Poodle"/>
+	<property name="big" value="Rottweiler"/>
+	<property name="working" value="SiberianHusky"/>
+	</bean>
+
+
+
+
+</beans>

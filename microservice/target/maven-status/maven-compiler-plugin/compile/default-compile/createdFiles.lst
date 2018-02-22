@@ -1,0 +1,6 @@
+com\gta\springboot\Application.class
+com\gta\springboot\ApplicationConfig$JerseyConfig.class
+com\gta\springboot\model\Customer.class
+com\gta\springboot\service\CustomerDAO.class
+com\gta\springboot\service\CustRest.class
+com\gta\springboot\ApplicationConfig.class

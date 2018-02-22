@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Implementation-Title: orders
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: guest_lwzte8s
+Implementation-Vendor-Id: com.gta.springboot
+Build-Jdk: 1.8.0_161
+Implementation-URL: http://projects.spring.io/spring-boot/orders-custo
+ mer-car/
+Created-By: Maven Integration for Eclipse
+Implementation-Vendor: Pivotal Software, Inc.
+

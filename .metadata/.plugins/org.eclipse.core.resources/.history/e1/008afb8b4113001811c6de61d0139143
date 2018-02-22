@@ -1,0 +1,143 @@
+import java.util.Scanner;
+
+package com.nym.CC;
+
+public class CreditCard {
+
+ public static void main(String[] args) {
+
+     long total;
+
+     Scanner input = new Scanner(System.in);
+
+     System.out.print("Please input your credit card number: ");
+
+     long number = input.nextLong();
+
+     total = sumOfEvenPlaces(number) + sumOfOddPlaces(number);
+
+     System.out.print(total);
+
+     if(isValid(total)) {
+
+         System.out.println("The length of your card number is: " + getSize(number));
+
+         System.out.println("This card is valid.");
+
+     }
+
+     else {
+
+         System.out.println("The length of your card number is: " + getSize(number));
+
+         System.out.println("Your card is invalid.");
+
+     }
+
+      
+
+ }
+
+ public static boolean isValid(long total) {
+
+     if (total % 10 == 0) {
+
+         return true;
+
+     }
+
+     return false;
+
+ }
+
+  
+
+ public static int sumOfEvenPlaces(long number) {
+
+     int sum = 0;
+
+     int remainder;
+
+     number %= 10;
+
+     while (number % 10 != 0 || number / 10 != 0) {
+
+     remainder = (int)(number % 10);
+
+     sum = sum + getDigit(remainder * 2);
+
+     number /= 100;
+
+     }
+
+     return sum;
+
+      
+
+ }
+
+ public static int getDigit(int number) {
+
+     if (number <= 9) {
+
+         return number;
+
+     } else if (number > 9)
+
+         return (number % 10 + number / 10);
+
+      
+
+     return number;
+
+ }
+
+  
+
+
+
+ public static int sumOfOddPlaces(long number) {
+
+     int sum = 0;
+
+     int remainder;
+
+     number /= 10;
+
+     while(number % 10 != 0 || number / 10 != 0) {
+
+         remainder = (int)(number % 10);
+
+         sum = sum + getDigit(remainder * 2);
+
+         number /= 100;
+
+     }
+
+     System.out.println(sum);
+
+     return sum;
+
+ }
+
+  
+
+ public static int getSize(long number) {
+
+         int len = 0;
+
+         while (number >= 10) {
+
+             number /= 10;
+
+             len++;
+
+     }
+
+     return len;
+
+ }
+
+      
+
+}

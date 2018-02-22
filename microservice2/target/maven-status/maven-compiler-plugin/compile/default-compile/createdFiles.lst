@@ -1,0 +1,6 @@
+com\gta\springboot\Application.class
+com\gta\springboot\model\Car.class
+com\gta\springboot\ApplicationConfig$JerseyConfig.class
+com\gta\springboot\service\CarRest.class
+com\gta\springboot\ApplicationConfig.class
+com\gta\springboot\service\CarDAO.class

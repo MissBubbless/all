@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move &apos;Dog.java, DogFactory.java, JavaFactoryPatternexample.java, Poodle.java&apos; to &apos;java&apos;" description="Move 4 resources to &apos;java&apos;" destination="src/main/java" element1="/PractiseExercises/src/main/resources/Dog.java" element2="/PractiseExercises/src/main/resources/DogFactory.java" element3="/PractiseExercises/src/main/resources/JavaFactoryPatternexample.java" element4="/PractiseExercises/src/main/resources/Poodle.java" flags="7" id="org.eclipse.ltk.core.refactoring.move.resources" resources="4" stamp="1518199099333" updateReferences="true"/>
+</session>
